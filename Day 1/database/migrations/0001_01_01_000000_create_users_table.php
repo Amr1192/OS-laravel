@@ -9,16 +9,19 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+
+    //migration is the structure        DDL
+    //model Data mainuplation language      insert, update, delete etccc
+    public function up(): void      //Do
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
+
+            $table->id();           //column id  auto increment  primary key   unsinged big integer
+            $table->string('name');         //varchar(255)
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
+            $table->enum('role',['user','admin']);
+            $table->timestamps();       //created at    updated at
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
@@ -35,12 +38,13 @@ return new class extends Migration
             $table->longText('payload');
             $table->integer('last_activity')->index();
         });
+
     }
 
     /**
      * Reverse the migrations.
      */
-    public function down(): void
+    public function down(): void        //Rollback 
     {
         Schema::dropIfExists('users');
         Schema::dropIfExists('password_reset_tokens');
