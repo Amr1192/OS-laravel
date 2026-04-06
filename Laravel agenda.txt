@@ -1,0 +1,39 @@
+Day 1		Static data
+
+Introduction to Laravel	(mvc)
+file structure 
+blade template engine   components,layout,component props
+
+
+Day 2 
+
+create database through Laravel	(Migrations)		DDL
+query data through Laravel  (Eloquent model)		DML
+
+
+
+
+Day 3
+
+Finished all crud
+CSRF token	introduction to authentication
+Factory and seeder
+Tinker
+query builder
+
+
+
+Day 4
+
+Authentication
+Authorization 
+
+Day 5
+
+Api
+custom middleware
+breeze
+ 
+
+
+
