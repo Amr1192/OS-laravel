@@ -33,6 +33,21 @@ Day 5
 Api
 custom middleware
 breeze
+composer require Laravel/breeze --dev
+php artisan breeze:install
+resources 
+
+
+
+//advanced topics or to look at
+
+caching
+service container
+service provider
+dependency injection
+facades
+email verifiction, password reset
+
  
 
 
