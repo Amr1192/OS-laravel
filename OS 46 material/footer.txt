@@ -1,0 +1,6 @@
+<footer class="bg-slate-800 border-t border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between text-sm text-slate-300">
+        <p>Open Source 46 MNF</p>
+        <p>Built with Laravel & Tailwind</p>
+    </div>
+</footer>
